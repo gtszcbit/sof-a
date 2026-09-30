@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+/* Subtle cross pattern for hero and cta backgrounds */
+.bg-subtle-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Smooth transitions */
+.btn-cta {
+  background-color: #22C55E;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 14px;
+  padding: 16px 24px;
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.20);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(34, 197, 94, 0.30);
+  background-color: #16a34a;
+}
+
+.btn-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.25);
+}
+
+.btn-cta-blue {
+  background-color: #1D4ED8;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 14px;
+  padding: 16px 24px;
+  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.25);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-cta-blue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(29, 78, 216, 0.35);
+  background-color: #1e40af;
+}
+
+.btn-cta-blue:active {
+  transform: translateY(0);
+}

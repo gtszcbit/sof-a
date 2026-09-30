@@ -1,0 +1,6 @@
+{
+  "name": "100 Marcapáginas Cristianos",
+  "description": "Landing page de alta conversión para el producto digital descargable 100 Marcapáginas Cristianos en PDF, listo para imprimir y compartir fe y esperanza.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
