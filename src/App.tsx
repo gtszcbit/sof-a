@@ -45,7 +45,7 @@ export default function App() {
         {/* 8 & 9. BONOS EXCLUSIVOS Y CAJA DE VALOR (BLANCO) */}
         <Bonuses />
 
-        {/* 10. PLANES DE CHECKOUT ($65 MXN Y $170 MXN) CON ORDER BUMP (#F8FAFC) */}
+        {/* 10. PLANES DE CHECKOUT ($50 MXN Y $70 MXN) CON ORDER BUMP (#F8FAFC) */}
         <Offer />
 
         {/* 11. GARANTÍA DE 7 DÍAS (BLANCO) */}

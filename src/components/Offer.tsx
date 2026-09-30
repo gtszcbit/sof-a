@@ -17,12 +17,12 @@ export const Offer: React.FC = () => {
   const [hasSeenBump, setHasSeenBump] = useState(false);
 
   const handleChooseBasic = () => {
-    // Si no ha visto el order bump, lo muestra para ofrecerle el descuento de $100 MXN
+    // Si no ha visto el order bump, lo muestra para ofrecerle el descuento de $60 MXN
     if (!hasSeenBump) {
       setIsOrderBumpOpen(true);
       setHasSeenBump(true);
     } else {
-      // Si ya vio o cerró la oferta, va directo a su checkout de $65 MXN
+      // Si ya vio o cerró la oferta, va directo a su checkout de $50 MXN
       window.location.href = BASIC_CHECKOUT_URL;
     }
   };
@@ -48,7 +48,7 @@ export const Offer: React.FC = () => {
         {/* CONTENEDOR DE LAS 2 CAJAS DE CHECKOUT */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-stretch text-left mb-10">
           
-          {/* CAJA 1: PLAN ESENCIAL ($65 MXN) */}
+          {/* CAJA 1: PLAN ESENCIAL ($50 MXN) */}
           <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-md border-2 border-dashed border-slate-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div className="mb-5 text-center sm:text-left">
@@ -148,7 +148,7 @@ export const Offer: React.FC = () => {
             </div>
           </div>
 
-          {/* CAJA 2: PLAN COMPLETO VIP ($170 MXN) */}
+          {/* CAJA 2: PLAN COMPLETO VIP ($70 MXN) */}
           <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-blue-600 overflow-hidden flex flex-col justify-between">
             {/* Badge superior derecho */}
             <div className="absolute top-0 right-0 bg-[#1D4ED8] text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider shadow-xs">
@@ -239,7 +239,11 @@ export const Offer: React.FC = () => {
             {/* Botón Verde de Compra Completa */}
             <div>
               <div className="w-full">
-                <CheckoutButton variant="green" className="w-full py-4 text-base sm:text-lg">
+                <CheckoutButton
+                  checkoutUrl="https://xpag.global/pay/QksdCqDD"
+                  variant="green"
+                  className="w-full py-4 text-base sm:text-lg"
+                >
                   Quiero recibir el material
                 </CheckoutButton>
               </div>

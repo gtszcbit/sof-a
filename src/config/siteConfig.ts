@@ -14,21 +14,21 @@ export const SITE_CONFIG = {
     "Un hermoso recurso digital con versículos, oraciones y mensajes de esperanza, listo para imprimir y compartir.",
 
   // Precios y Moneda (Pesos Mexicanos - MXN)
-  price: "170 MXN",
+  price: "70 MXN",
   oldPrice: "[OLD_PRICE]", // Ejemplo: "250 MXN"
   paymentType: "Pago único",
 
-  // Plan Esencial ($65 MXN)
-  basicPrice: "65 MXN",
+  // Plan Esencial ($50 MXN)
+  basicPrice: "50 MXN",
   basicOldPrice: "100 MXN",
-  basicCheckoutUrl: "https://xpag.global/pay/xDGTuTl3",
+  basicCheckoutUrl: "https://xpag.global/pay/DVqUbaP9",
 
-  // Oferta con descuento Order Bump / Downsell al hacer clic en Plan Esencial ($100 MXN)
-  downsellPrice: "100 MXN",
-  downsellCheckoutUrl: "https://xpag.global/pay/RtudpS9e",
+  // Oferta con descuento Order Bump / Downsell al hacer clic en Plan Esencial ($60 MXN)
+  downsellPrice: "60 MXN",
+  downsellCheckoutUrl: "https://xpag.global/pay/XN6OkB0i",
 
   // Enlaces de Acción (Checkout y Legales)
-  checkoutUrl: "https://xpag.global/pay/4AsWJZy9",
+  checkoutUrl: "https://xpag.global/pay/QksdCqDD",
   privacyUrl: "[PRIVACY_URL]",
   termsUrl: "[TERMS_URL]",
   contactUrl: "[CONTACT_URL]",
@@ -40,7 +40,7 @@ export const SITE_CONFIG = {
 
   // Valores de la sección de Bonos y Oferta
   originalTotalValue: "$310 MXN",
-  currentOfferValue: "170 MXN",
+  currentOfferValue: "70 MXN",
 
   bonusValues: {
     bonus01: "MXN$ 28,90 MXN$ 0,00",

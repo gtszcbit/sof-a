@@ -8,6 +8,7 @@ interface CheckoutButtonProps {
   className?: string;
   showIcon?: boolean;
   scrollToId?: string;
+  checkoutUrl?: string;
 }
 
 export const CheckoutButton: React.FC<CheckoutButtonProps> = ({
@@ -16,6 +17,7 @@ export const CheckoutButton: React.FC<CheckoutButtonProps> = ({
   className = '',
   showIcon = true,
   scrollToId,
+  checkoutUrl,
 }) => {
   const [showNotice, setShowNotice] = useState(false);
 
@@ -36,13 +38,14 @@ export const CheckoutButton: React.FC<CheckoutButtonProps> = ({
       }
     }
 
-    // Si CHECKOUT_URL es un enlace real válido (http:// o https://)
+    const activeUrl = checkoutUrl || CHECKOUT_URL;
+    // Si el checkoutUrl es un enlace real válido (http:// o https://)
     const isRealUrl =
-      CHECKOUT_URL &&
-      (CHECKOUT_URL.startsWith('http://') || CHECKOUT_URL.startsWith('https://'));
+      activeUrl &&
+      (activeUrl.startsWith('http://') || activeUrl.startsWith('https://'));
 
     if (isRealUrl) {
-      window.open(CHECKOUT_URL, '_blank', 'noopener,noreferrer');
+      window.open(activeUrl, '_blank', 'noopener,noreferrer');
       return;
     }
 

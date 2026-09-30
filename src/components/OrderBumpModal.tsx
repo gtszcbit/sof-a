@@ -27,7 +27,7 @@ export const OrderBumpModal: React.FC<OrderBumpModalProps> = ({
     const url =
       DOWNSELL_CHECKOUT_URL && DOWNSELL_CHECKOUT_URL !== '[DOWNSELL_CHECKOUT_URL]'
         ? DOWNSELL_CHECKOUT_URL
-        : 'https://xpag.global/pay/RtudpS9e';
+        : 'https://xpag.global/pay/XN6OkB0i';
     window.location.href = url;
   };
 
@@ -36,7 +36,7 @@ export const OrderBumpModal: React.FC<OrderBumpModalProps> = ({
     const basicUrl =
       BASIC_CHECKOUT_URL && BASIC_CHECKOUT_URL !== '[CHECKOUT_URL_BASIC]'
         ? BASIC_CHECKOUT_URL
-        : 'https://xpag.global/pay/xDGTuTl3';
+        : 'https://xpag.global/pay/DVqUbaP9';
     window.location.href = basicUrl;
   };
 
