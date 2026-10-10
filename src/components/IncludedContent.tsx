@@ -5,7 +5,7 @@ import { CheckoutButton } from './CheckoutButton';
 import { Check } from 'lucide-react';
 
 const includedList: string[] = [
-  '100 marcapáginas cristianos',
+  '100 marcapáginas de Dios',
   'Versículos inspirados en la Biblia',
   'Oraciones y mensajes de esperanza',
   'Diferentes diseños para imprimir',

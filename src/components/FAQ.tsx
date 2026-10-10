@@ -8,7 +8,7 @@ interface FAQItem {
 
 const faqList: FAQItem[] = [
   {
-    question: '¿Cómo recibiré los 100 Marcapáginas Cristianos?',
+    question: '¿Cómo recibiré los 100 Marcapáginas de Dios?',
     answer: 'Después de completar tu compra recibirás las instrucciones de acceso al material digital.',
   },
   {
@@ -22,7 +22,7 @@ const faqList: FAQItem[] = [
   {
     question: '¿Puedo utilizarlos en mi iglesia?',
     answer:
-      'Sí, el material está pensado para que puedas compartir los marcapáginas en diferentes momentos y actividades cristianas, de acuerdo con las condiciones de uso de la oferta.',
+      'Sí, el material está pensado para que puedas compartir los marcapáginas en diferentes momentos y actividades de Dios, de acuerdo con las condiciones de uso de la oferta.',
   },
   {
     question: '¿Puedo regalarlos a familiares y amigos?',

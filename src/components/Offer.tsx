@@ -14,17 +14,10 @@ import { Check, X as XIcon, ShieldCheck } from 'lucide-react';
 
 export const Offer: React.FC = () => {
   const [isOrderBumpOpen, setIsOrderBumpOpen] = useState(false);
-  const [hasSeenBump, setHasSeenBump] = useState(false);
 
   const handleChooseBasic = () => {
-    // Si no ha visto el order bump, lo muestra para ofrecerle el descuento de $60 MXN
-    if (!hasSeenBump) {
-      setIsOrderBumpOpen(true);
-      setHasSeenBump(true);
-    } else {
-      // Si ya vio o cerró la oferta, va directo a su checkout de $50 MXN
-      window.location.href = BASIC_CHECKOUT_URL;
-    }
+    // Siempre muestra la oferta especial de $70 MXN con opción de comprar la de $55 MXN
+    setIsOrderBumpOpen(true);
   };
 
   return (
@@ -48,7 +41,7 @@ export const Offer: React.FC = () => {
         {/* CONTENEDOR DE LAS 2 CAJAS DE CHECKOUT */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-stretch text-left mb-10">
           
-          {/* CAJA 1: PLAN ESENCIAL ($50 MXN) */}
+          {/* CAJA 1: PLAN ESENCIAL ($55 MXN) */}
           <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-md border-2 border-dashed border-slate-300 flex flex-col justify-between overflow-hidden">
             <div>
               <div className="mb-5 text-center sm:text-left">
@@ -148,7 +141,7 @@ export const Offer: React.FC = () => {
             </div>
           </div>
 
-          {/* CAJA 2: PLAN COMPLETO VIP ($70 MXN) */}
+          {/* CAJA 2: PLAN COMPLETO VIP ($140 MXN) */}
           <div className="relative bg-white rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-blue-600 overflow-hidden flex flex-col justify-between">
             {/* Badge superior derecho */}
             <div className="absolute top-0 right-0 bg-[#1D4ED8] text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider shadow-xs">
@@ -161,8 +154,11 @@ export const Offer: React.FC = () => {
                   COLECCIÓN DIGITAL EN PDF
                 </span>
                 <h3 className="text-2xl font-black text-[#0F172A]">
-                  100 Marcapáginas Cristianos
+                  100 Marcapáginas de Dios
                 </h3>
+                <p className="text-xs text-blue-700 font-bold mt-1">
+                  ⭐ Paquete VIP Todo Incluido · Máximo Ahorro
+                </p>
               </div>
 
               {/* Bloque de Precio */}
@@ -194,7 +190,7 @@ export const Offer: React.FC = () => {
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
                   <span className="text-sm font-semibold text-slate-800">
-                    100 marcapáginas cristianos listos
+                    <strong>Colección completa:</strong> 100 marcapáginas de Dios listos
                   </span>
                 </div>
 
@@ -212,7 +208,7 @@ export const Offer: React.FC = () => {
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
                   <span className="text-sm font-semibold text-slate-800">
-                    PDF listo para imprimir en alta resolución
+                    PDF de <strong>máxima resolución (300 DPI)</strong> listo para imprimir
                   </span>
                 </div>
 
@@ -221,7 +217,7 @@ export const Offer: React.FC = () => {
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
                   <span className="text-sm font-semibold text-slate-800">
-                    Los 5 bonos adicionales exclusivos de regalo
+                    <span className="text-emerald-700 font-bold">🎁 Los 5 bonos adicionales</span> exclusivos de regalo
                   </span>
                 </div>
 
@@ -230,7 +226,34 @@ export const Offer: React.FC = () => {
                     <Check className="w-3.5 h-3.5 stroke-[3]" />
                   </div>
                   <span className="text-sm font-semibold text-slate-800">
-                    Material para uso personal y actividades de iglesia
+                    <strong>Acceso a recursos devocionales</strong> y plan de lectura bíblica
+                  </span>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  </div>
+                  <span className="text-sm font-semibold text-slate-800">
+                    <strong>Licencia de uso libre:</strong> iglesias, eventos, jóvenes y regalos
+                  </span>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  </div>
+                  <span className="text-sm font-semibold text-slate-800">
+                    <strong>Soporte prioritario por WhatsApp</strong> para tus impresiones
+                  </span>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                  </div>
+                  <span className="text-sm font-semibold text-slate-800">
+                    <strong>Acceso vitalicio:</strong> descargas ilimitadas e inmediatas
                   </span>
                 </div>
               </div>
@@ -240,7 +263,7 @@ export const Offer: React.FC = () => {
             <div>
               <div className="w-full">
                 <CheckoutButton
-                  checkoutUrl="https://xpag.global/pay/QksdCqDD"
+                  checkoutUrl="https://xpag.global/pay/8AqR546H"
                   variant="green"
                   className="w-full py-4 text-base sm:text-lg"
                 >

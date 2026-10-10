@@ -28,7 +28,7 @@ export const FinalCTA: React.FC = () => {
 
         {/* Texto */}
         <p className="text-sm sm:text-base text-blue-100 font-normal leading-relaxed max-w-[520px] mx-auto mb-9 text-balance">
-          Recibe tus 100 Marcapáginas Cristianos y empieza a compartir versículos, oraciones y mensajes de esperanza.
+          Recibe tus 100 Marcapáginas de Dios y empieza a compartir versículos, oraciones y mensajes de esperanza.
         </p>
 
         {/* Botón Verde */}

@@ -10,7 +10,7 @@ interface BenefitItem {
 const benefitsData: BenefitItem[] = [
   {
     icon: '📖',
-    title: '100 diseños cristianos',
+    title: '100 diseños de Dios',
     description: 'Una colección con versículos, oraciones y mensajes de esperanza para diferentes momentos.',
     tagColor: 'bg-blue-50 text-blue-700 border-blue-200',
   },

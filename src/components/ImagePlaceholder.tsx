@@ -27,7 +27,7 @@ export const ImagePlaceholder: React.FC<ImagePlaceholderProps> = ({
       <div className={`relative overflow-hidden rounded-2xl ${className}`}>
         <img
           src={identifier}
-          alt={label || '100 Marcapáginas Cristianos'}
+          alt={label || '100 Marcapáginas de Dios'}
           className="w-full h-auto object-cover rounded-2xl block shadow-sm"
           loading="eager"
           referrerPolicy="no-referrer"

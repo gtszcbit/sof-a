@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
 
         {/* HEADLINE PRINCIPAL */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.15] text-balance mb-5">
-          100 Marcapáginas Cristianos{' '}
+          100 Marcapáginas de Dios{' '}
           <span className="text-[#FACC15] block sm:inline font-extrabold">
             para llevar fe y esperanza
           </span>{' '}
@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
           <div className="relative p-2 sm:p-2.5 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl transition-transform duration-300 hover:scale-[1.01]">
             <ImagePlaceholder
               identifier={IMAGES.hero}
-              label="100 Marcapáginas Cristianos - Colección Digital en PDF lista para imprimir"
+              label="100 Marcapáginas de Dios - Colección Digital en PDF lista para imprimir"
               aspectRatio="1:1"
               theme="blue"
               className="w-full shadow-inner"

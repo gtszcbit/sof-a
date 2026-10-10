@@ -5,8 +5,7 @@ import { Benefits } from './components/Benefits';
 import { ProductShowcase } from './components/ProductShowcase';
 import { HowItWorks } from './components/HowItWorks';
 import { IncludedContent } from './components/IncludedContent';
-import { SocialProof } from './components/SocialProof';
-import { Bonuses } from './components/Bonuses';
+import { CustomerReviews } from './components/CustomerReviews';
 import { Offer } from './components/Offer';
 import { Guarantee } from './components/Guarantee';
 import { FAQ } from './components/FAQ';
@@ -39,13 +38,10 @@ export default function App() {
         {/* 6. DENTRO DEL KIT - LISTA Y DEMO (#F8FAFC) */}
         <IncludedContent />
 
-        {/* 7. PRUEBA SOCIAL - CONDICIONAL CON SHOW_TESTIMONIALS (BLANCO) */}
-        <SocialProof forceShow={showTestimonials} />
+        {/* 7. OPINIONES DE COMPRADORES (5 ESTRELLAS) - EN LUGAR DE BONOS EXCLUSIVOS */}
+        <CustomerReviews />
 
-        {/* 8 & 9. BONOS EXCLUSIVOS Y CAJA DE VALOR (BLANCO) */}
-        <Bonuses />
-
-        {/* 10. PLANES DE CHECKOUT ($50 MXN Y $70 MXN) CON ORDER BUMP (#F8FAFC) */}
+        {/* 8. PLANES DE CHECKOUT ($55 MXN Y $140 MXN) CON ORDER BUMP (#F8FAFC) */}
         <Offer />
 
         {/* 11. GARANTÍA DE 7 DÍAS (BLANCO) */}

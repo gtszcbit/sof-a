@@ -7,28 +7,28 @@
 
 export const SITE_CONFIG = {
   // Información del Producto
-  productName: "100 Marcapáginas Cristianos",
-  headlineFirst: "100 Marcapáginas Cristianos",
+  productName: "100 Marcapáginas de Dios",
+  headlineFirst: "100 Marcapáginas de Dios",
   headlineSecond: "para llevar fe y esperanza a cualquier persona",
   subheadline:
     "Un hermoso recurso digital con versículos, oraciones y mensajes de esperanza, listo para imprimir y compartir.",
 
   // Precios y Moneda (Pesos Mexicanos - MXN)
-  price: "70 MXN",
+  price: "140 MXN",
   oldPrice: "[OLD_PRICE]", // Ejemplo: "250 MXN"
   paymentType: "Pago único",
 
-  // Plan Esencial ($50 MXN)
-  basicPrice: "50 MXN",
+  // Plan Esencial ($55 MXN)
+  basicPrice: "55 MXN",
   basicOldPrice: "100 MXN",
-  basicCheckoutUrl: "https://xpag.global/pay/DVqUbaP9",
+  basicCheckoutUrl: "https://xpag.global/pay/zkaVu3we",
 
-  // Oferta con descuento Order Bump / Downsell al hacer clic en Plan Esencial ($60 MXN)
-  downsellPrice: "60 MXN",
-  downsellCheckoutUrl: "https://xpag.global/pay/XN6OkB0i",
+  // Oferta con descuento Order Bump / Downsell al hacer clic en Plan Esencial ($70 MXN)
+  downsellPrice: "70 MXN",
+  downsellCheckoutUrl: "https://xpag.global/pay/vfOCVyLE",
 
   // Enlaces de Acción (Checkout y Legales)
-  checkoutUrl: "https://xpag.global/pay/QksdCqDD",
+  checkoutUrl: "https://xpag.global/pay/8AqR546H",
   privacyUrl: "[PRIVACY_URL]",
   termsUrl: "[TERMS_URL]",
   contactUrl: "[CONTACT_URL]",
@@ -40,7 +40,7 @@ export const SITE_CONFIG = {
 
   // Valores de la sección de Bonos y Oferta
   originalTotalValue: "$310 MXN",
-  currentOfferValue: "70 MXN",
+  currentOfferValue: "140 MXN",
 
   bonusValues: {
     bonus01: "MXN$ 28,90 MXN$ 0,00",

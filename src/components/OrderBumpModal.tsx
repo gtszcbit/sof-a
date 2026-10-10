@@ -13,9 +13,9 @@ interface OrderBumpModalProps {
 export const OrderBumpModal: React.FC<OrderBumpModalProps> = ({
   isOpen,
   onClose,
-  vipPrice = '100 MXN',
-  vipOldPrice = '250 MXN',
-  basicPrice = '65 MXN',
+  vipPrice = '70 MXN',
+  vipOldPrice = '140 MXN',
+  basicPrice = '55 MXN',
 }) => {
   if (!isOpen) return null;
 
@@ -27,7 +27,7 @@ export const OrderBumpModal: React.FC<OrderBumpModalProps> = ({
     const url =
       DOWNSELL_CHECKOUT_URL && DOWNSELL_CHECKOUT_URL !== '[DOWNSELL_CHECKOUT_URL]'
         ? DOWNSELL_CHECKOUT_URL
-        : 'https://xpag.global/pay/XN6OkB0i';
+        : 'https://xpag.global/pay/vfOCVyLE';
     window.location.href = url;
   };
 
@@ -36,7 +36,7 @@ export const OrderBumpModal: React.FC<OrderBumpModalProps> = ({
     const basicUrl =
       BASIC_CHECKOUT_URL && BASIC_CHECKOUT_URL !== '[CHECKOUT_URL_BASIC]'
         ? BASIC_CHECKOUT_URL
-        : 'https://xpag.global/pay/DVqUbaP9';
+        : 'https://xpag.global/pay/zkaVu3we';
     window.location.href = basicUrl;
   };
 
@@ -107,12 +107,12 @@ export const OrderBumpModal: React.FC<OrderBumpModalProps> = ({
           <span>Sí, la quiero por ${displayVipPrice} MXN</span>
         </button>
 
-        {/* Opción discreta de continuar con el plan básico */}
+        {/* Opción de continuar con el plan básico */}
         <button
           onClick={handleDeclineOffer}
-          className="text-xs sm:text-sm text-slate-400 hover:text-slate-600 underline font-medium cursor-pointer transition text-center block mx-auto py-1"
+          className="w-full py-2.5 px-4 rounded-xl border border-slate-200 hover:border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 text-xs sm:text-sm font-medium transition cursor-pointer text-center block"
         >
-          No, gracias. Quiero continuar con el plan de ${displayBasicPrice} MXN.
+          No, gracias. Quiero continuar con el plan de ${displayBasicPrice} MXN →
         </button>
 
         <div className="mt-3 flex items-center justify-center gap-1.5 text-[11px] text-slate-400 font-medium">
