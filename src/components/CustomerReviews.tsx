@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Star, CheckCircle2, Quote, ThumbsUp, Sparkles, Heart } from 'lucide-react';
 
 interface Review {
@@ -66,76 +66,9 @@ const reviewsData: Review[] = [
     usefulCount: 29,
     tag: 'Regalos Devocionales',
   },
-  {
-    id: 4,
-    name: 'Hermana Teresa Morales',
-    role: 'Grupo de Oración y Evangelismo',
-    location: 'Puebla, México',
-    avatarText: 'TM',
-    avatarBg: 'bg-emerald-600',
-    rating: 5,
-    date: 'Hace 1 semana',
-    title: 'Ideal para compartir la fe y dar ánimo en momentos difíciles',
-    comment:
-      'En nuestro grupo solemos visitar enfermos y personas necesitadas de esperanza. Llevarles estos marcapáginas con versículos de fortaleza y sanidad ha sido un instrumento de Dios. Son 100 diseños distintos, así que siempre hay uno exacto para cada situación. El acceso llegó al instante a mi correo tras la compra.',
-    verified: true,
-    usefulCount: 51,
-    tag: 'Evangelismo y Ánimo',
-  },
-  {
-    id: 5,
-    name: 'David Salazar P.',
-    role: 'Estudiante Bíblico',
-    location: 'Santiago, Chile',
-    avatarText: 'DS',
-    avatarBg: 'bg-indigo-600',
-    rating: 5,
-    date: 'Hace 1 semana',
-    title: 'Variedad increíble y mensajes que edifican el alma',
-    comment:
-      'Es difícil encontrar recursos digitales cristianos tan bien hechos y a un precio tan accesible. La variedad de oraciones, salmos y promesas bíblicas es completísima. Los tengo guardados en mi computadora y cada vez que necesito regalar un detalle a un amigo o hermano, solo imprimo una hoja y listo. Recomendado al 100%.',
-    verified: true,
-    usefulCount: 24,
-    tag: 'Estudio Bíblico',
-  },
-  {
-    id: 6,
-    name: 'Claudia Marcela Rivas',
-    role: 'Mamá y Educadora en Casa',
-    location: 'Lima, Perú',
-    avatarText: 'CR',
-    avatarBg: 'bg-purple-600',
-    rating: 5,
-    date: 'Hace 2 semanas',
-    title: 'A mis hijos y alumnos les fascinaron',
-    comment:
-      'Hacemos devocionales en familia todos los días y estos marcapáginas han sido una motivación hermosa para que los niños lean su Biblia y marquen sus versículos favoritos. La compra fue 100% segura, el enlace de descarga funcionó de inmediato y los archivos vienen muy ordenados y listos para imprimir.',
-    verified: true,
-    usefulCount: 33,
-    tag: 'Familia y Hogar',
-  },
 ];
 
 export const CustomerReviews: React.FC = () => {
-  const [filter, setFilter] = useState<string>('todos');
-
-  const categories = [
-    { id: 'todos', label: 'Todas las opiniones (1,480+)' },
-    { id: 'Uso en Iglesia', label: 'Uso en Iglesia' },
-    { id: 'Escuela Dominical', label: 'Escuela Dominical' },
-    { id: 'Regalos Devocionales', label: 'Regalos y Familia' },
-  ];
-
-  const filteredReviews =
-    filter === 'todos'
-      ? reviewsData
-      : reviewsData.filter(
-          (r) =>
-            r.tag.toLowerCase().includes(filter.toLowerCase()) ||
-            (filter === 'Regalos Devocionales' &&
-              (r.tag.includes('Regalos') || r.tag.includes('Familia')))
-        );
-
   return (
     <section id="opiniones" className="bg-white py-16 md:py-24 border-b border-slate-200/80">
       <div className="max-w-[1020px] mx-auto px-5 sm:px-6">
@@ -217,26 +150,9 @@ export const CustomerReviews: React.FC = () => {
           </div>
         </div>
 
-        {/* BOTONES DE FILTRO RÁPIDO */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setFilter(cat.id)}
-              className={`px-4 py-2 rounded-full text-xs font-bold transition cursor-pointer ${
-                filter === cat.id
-                  ? 'bg-[#1D4ED8] text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
-
-        {/* GRILLA DE TESTIMONIOS (CARDS) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {filteredReviews.map((review) => (
+        {/* EXACTAMENTE 3 TESTIMONIOS (GRID DE 3 COLUMNAS) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {reviewsData.map((review) => (
             <div
               key={review.id}
               className="bg-[#F8FAFC] border border-slate-200/90 hover:border-blue-300 rounded-3xl p-6 flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-200"

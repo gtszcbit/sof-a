@@ -3,7 +3,6 @@ import { TopBar } from './components/TopBar';
 import { Hero } from './components/Hero';
 import { Benefits } from './components/Benefits';
 import { ProductShowcase } from './components/ProductShowcase';
-import { HowItWorks } from './components/HowItWorks';
 import { IncludedContent } from './components/IncludedContent';
 import { CustomerReviews } from './components/CustomerReviews';
 import { Offer } from './components/Offer';
@@ -32,20 +31,17 @@ export default function App() {
         {/* 4. MIRA CÓMO QUEDA - CARRUSEL GALERÍA (#F8FAFC) */}
         <ProductShowcase />
 
-        {/* 5. PASO A PASO - TIMELINE VERTICAL (BLANCO) */}
-        <HowItWorks />
-
-        {/* 6. DENTRO DEL KIT - LISTA Y DEMO (#F8FAFC) */}
+        {/* 5. DENTRO DEL KIT - LISTA Y DEMO (BLANCO) */}
         <IncludedContent />
 
-        {/* 7. OPINIONES DE COMPRADORES (5 ESTRELLAS) - EN LUGAR DE BONOS EXCLUSIVOS */}
+        {/* 7. OPINIONES DE COMPRADORES (5 ESTRELLAS) */}
         <CustomerReviews />
 
-        {/* 8. PLANES DE CHECKOUT ($55 MXN Y $140 MXN) CON ORDER BUMP (#F8FAFC) */}
-        <Offer />
-
-        {/* 11. GARANTÍA DE 7 DÍAS (BLANCO) */}
+        {/* 8. GARANTÍA DE 7 DÍAS (COMPACTA) */}
         <Guarantee />
+
+        {/* 9. PLANES DE CHECKOUT ($55 MXN Y $140 MXN) - ELIGE EL PLAN IDEAL PARA TI */}
+        <Offer />
 
         {/* 12. DUDAS FRECUENTES (FAQ) (#F8FAFC) */}
         <FAQ />
